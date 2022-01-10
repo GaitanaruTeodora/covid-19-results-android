@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lv_design">
+
+    <ImageView
+        android:id="@+id/gaitanaru_teodora_iv_picture"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:contentDescription="@string/corona"
+        android:src="@drawable/virus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv_row_pacient_rezultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/rezultat_rezRezActivity"
+        android:fontFamily="@font/arima_madurai_bold"
+        android:textAllCaps="true"
+        android:textColor="@color/light_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/gaitanaru_teodora_iv_picture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv_row_pacient_data_recoltarii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/data_recoltare"
+        android:fontFamily="@font/arima_madurai_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/light_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/gaitanaru_teodora_tv_row_pacient_nume"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_tv_row_pacient_rezultat" />
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv_row_pacient_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/arima_madurai_bold"
+        android:text="@string/nume_RezActiviyt"
+        android:textAllCaps="false"
+        android:textColor="@color/light_pink"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/gaitanaru_teodora_iv_picture"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_tv_row_pacient_rezultat" />
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv_row_pacient_cnp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/arima_madurai_bold"
+        android:textColor="@color/light_pink"
+        android:text="@string/cnp_rezActivity"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/gaitanaru_teodora_iv_picture"
+
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_tv_row_pacient_nume" />
+
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv_row_pacient_centru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/light_pink"
+        android:text="@string/centru_rezActivity"
+        android:textAllCaps="false"
+        android:fontFamily="@font/arima_madurai_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/gaitanaru_teodora_iv_picture"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_tv_row_pacient_cnp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

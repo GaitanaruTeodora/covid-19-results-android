@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper3"
+    tools:context=".AddCentruSanitarActivity">
+
+    <TextView
+        android:id="@+id/gaitanaru_teodora_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gaitanaru_teodora_til_add_denumire"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gaitanaru_teodora_tiet_add_denumire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:drawableStart="@drawable/ic_baseline_assignment_24"
+            android:hint="@string/denumire_centru_sanitar"
+            android:textColor="@color/mauve"
+            android:textColorHighlight="@color/mauve"
+            android:textColorLink="@color/mauve" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gaitanaru_teodora_til_add_judet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_til_add_denumire">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gaitanaru_teodora_tiet_add_judet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_location_city_24"
+            android:hint="@string/judet"
+            android:background="@color/transparent"
+            android:textColor="@color/mauve"
+            android:textColorHighlight="@color/mauve"
+            android:textColorLink="@color/mauve" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gaitanaru_teodora_till_add_adresa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_til_add_judet">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gaitanaru_teodora_tiet_add_adresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:hint="@string/adresa"
+            android:textColor="@color/mauve"
+            android:background="@color/transparent"
+            android:textColorHighlight="@color/mauve"
+            android:textColorLink="@color/mauve" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gaitanaru_teodora_til_add_telefon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_edit_text"
+        app:prefixText="@string/prefix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_till_add_adresa">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gaitanaru_teodora_tiet_add_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:hint="@string/telefon"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/gaitanaru_teodora_btn_add_centru"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:text="@string/adauga_centru"
+        android:textColor="@color/light_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gaitanaru_teodora_til_add_telefon"
+        app:layout_constraintVertical_bias="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

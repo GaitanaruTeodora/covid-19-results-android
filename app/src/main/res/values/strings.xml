@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Tema2</string>
+    <string name="rezTestAct_vizualizare_statistici">Vizualizare Statistici</string>
+    <string name="mainAct_rezultate_teste">Rezultate teste</string>
+    <string name="mainAct_centre_sanitare">Centre sanitare</string>
+    <string name="testare_covid_19">Testare Covid-19</string>
+    <string name="delete">Delete</string>
+    <string name="update">update</string>
+    <string name="add">add</string>
+    <string name="denumire_centru_sanitar">Denumire</string>
+    <string name="default_value">-</string>
+    <string name="corona">corona</string>
+    <string name="rezultat_rezRezActivity">Rezultat</string>
+    <string name="data_recoltare">Data recoltare</string>
+    <string name="nume_RezActiviyt">Nume:</string>
+    <string name="cnp_rezActivity">Cnp:</string>
+    <string name="centru_rezActivity">Centru:</string>
+    <string name="denumire_centru">Denumire:</string>
+    <string name="hospital">hospital</string>
+    <string name="judet_centru">Judet:</string>
+    <string name="adresa_centru">Adresa:</string>
+    <string name="telefon_centru">Telefon:</string>
+    <string name="rezultate_teste_tv">Rezultate teste</string>
+    <string name="lista_centre_sanitare">Lista centre sanitare</string>
+    <string name="adauga_centru">Adauga centru</string>
+    <string name="telefon">Telefon</string>
+    <string name="prefix">+4</string>
+    <string name="adresa">Adresa</string>
+    <string name="judet">Judet</string>
+    <string name="main_message_neg">Procent negativi: %1$.2f%% </string>
+    <string name="main_message_poz">Procent pozitivi: %1$.2f%% </string>
+    <string name="denumire_invalida">Denumire invalida</string>
+    <string name="judet_invalid">Judet invalid</string>
+    <string name="adresa_invalida">Adresa invalida</string>
+    <string name="telefon_invalid">Telefon invalid</string>
+
+
+</resources>
